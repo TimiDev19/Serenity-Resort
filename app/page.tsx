@@ -408,7 +408,7 @@ const page = () => {
                 <input type="text" className=' w-[45%] border-b border-black bg-transparent py-2 placeholder:text-black placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Last Name: (eg. Malik)' />
                 <input type="text" className=' w-[45%] border-b border-black bg-transparent py-2 placeholder:text-black placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Email: (eg. maliksolomon@gmail.com)' />
                 <input type="text" className=' w-[45%] border-b border-black bg-transparent py-2 placeholder:text-black placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Message' />
-                <button className=' border border-black px-4 bg-slate-100 bg-opacity-20 hover:bg-transparent duration-500'>Submit</button>
+                <button className=' border border-black px-4 bg-slate-100 bg-opacity-20 hover:bg-transparent duration-500'>Contact</button>
               </form>
             </FadeInFromLeft>
           </div>
@@ -735,7 +735,7 @@ const page = () => {
             <Carousel className=' w-[70%] '>
               <FadeInFromBottom>
                 <CarouselContent className=' w-fit'>
-                {
+                  {
                     helpers.testimonials.map((test, index) => (
                       <CarouselItem key={index} className='block lg:hidden w-fit'>
                         <div
@@ -761,6 +761,53 @@ const page = () => {
                 <CarouselNext />
               </FadeInFromBottom>
             </Carousel>
+          </div>
+        </div>
+
+        <div id="tour" className={`${lora.className} h-fit w-full pr-2`}>
+          <FadeInFromLeft>
+            <div className=' w-full flex items-end justify-end pb-3 border-t border-[#745248]'>
+              <p className={`${italiclora.className} w-[85%] text-2xl text-[#745248]`}>
+                Welcome to Serenity Resort, where your journey into relaxation and luxury begins. As you explore, you'll discover serene ocean views, lush landscapes, and spaces designed for pure comfort. Take your time, immerse yourself in the beauty of our resort, and imagine the unforgettable experiences awaiting you. We're excited to share this little slice of paradise with you!
+              </p>
+            </div>
+          </FadeInFromLeft>
+        </div>
+
+        <div className=" w-full h-[50vh] px-6">
+          <FadeInFromBottom>
+            <Carousellle />
+          </FadeInFromBottom>
+        </div>
+
+        <div
+          id='about'
+          className=' h-[100vh] flex flex-col items-end justify-end bg-transparent mb-[100px]'
+        >
+          <div className=' bg-transparent h-full py-10 flex items-start justify-start w-[50%] z-[20] absolute mx-3'>
+            <FadeInFromBottom>
+              <div className=' w-full border border-[#EEE9DA] h-[40%] p-3'>
+                <div className=' h-full w-full contact'></div>
+              </div>
+            </FadeInFromBottom>
+          </div>
+
+          <div className=" w-full h-[80vh] flex flex-col items-start justify-end contact-bg">
+            <div className=' h-[60%] px-4'>
+              <FadeInFromLeft>
+
+                <form className=' w-[98%]'>
+                  <h1 className={`${lora.className} font-light text-white text-5xl mb-4`}>Contact Us</h1>
+                  <input type="text" className=' w-[100%] border-b border-white text-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='First Name: (eg. Solomon)' />
+                  <input type="text" className=' w-[100%] border-b border-white text-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Last Name: (eg. Malik)' />
+                  <input type="text" className=' w-[100%] border-b border-white text-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Email: (eg. maliksolomon@gmail.com)' />
+                  <input type="text" className=' w-[100%] border-b border-white text-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Message' />
+                  <button className=' border border-white text-white px-4 bg-slate-100 bg-opacity-20 hover:bg-transparent duration-500'>Contact</button>
+                </form>
+
+              </FadeInFromLeft>
+            </div>
+
           </div>
         </div>
       </div >

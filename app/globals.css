@@ -139,7 +139,7 @@
 
 .contact-bg {
 
-  background-image: url('../assets/backgroundfor\ contact.jpg');
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url('../assets/backgroundfor\ contact.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

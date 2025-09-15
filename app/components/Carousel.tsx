@@ -14,7 +14,7 @@ const Carousel = () => {
     return (
         <div
             id="carouselExampleIndicators"
-            className="relative overflow-hidden max-h-[50vh] max-w-[45%] flex items-center justify-center"
+            className="relative overflow-hidden lg:max-h-[50vh] lg:max-w-[45%] flex items-center justify-center"
             data-twe-carousel-init
             data-twe-ride="carousel">
             {/* <!--Carousel indicators--> */}
