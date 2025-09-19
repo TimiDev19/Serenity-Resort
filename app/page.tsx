@@ -15,6 +15,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import helpers from '@/helpers/helpers';
 import { features } from 'process';
+import Link from 'next/link';
 
 const lora = Lora({
   subsets: ['latin'],
@@ -117,7 +118,7 @@ const page = () => {
                                   ))
                                 }
                               </ul>
-                              <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
+                              <Link href={`/rooms/${rooms.slug}`} className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</Link>
                             </div>
                           </div>
                           <div
@@ -132,187 +133,6 @@ const page = () => {
                       </CarouselItem>
                     ))
                   }
-                  <CarouselItem className=' w-fit'>
-                    <div className=' border border-[#745248] p-2 bg-white w-[70vw] mx-4 h-[60vh] flex lg:flex-row flex-col items-center justify-between'>
-                      <div className={` ${lora.className} w-[45%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-3xl mb-4`}>Deluxe Room</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>King size bed</li>
-                            <li>En-suite Bathroom</li>
-                            <li>Private balcony with garden view</li>
-                            <li>Complimenrary breakfast</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-                      <div className=' w-[45%] h-full deluxe bg-red-500'>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  <CarouselItem className=' w-fit'>
-                    <div className=' border border-[#745248] p-2 bg-white w-[70vw] mx-4 h-[60vh] flex lg:flex-row flex-col items-center justify-between'>
-                      <div className={` ${lora.className} w-[45%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-3xl mb-4`}>Ocean-view Room</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Spacious suite with a separate living area</li>
-                            <li>Panoramic ocean views</li>
-                            <li>Private balcony</li>
-                            <li>Luxurious bathroom with a soaking tub</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-                      <div className=' w-[45%] h-full ocean bg-red-500'>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  <CarouselItem className=' w-fit'>
-                    <div className=' border border-[#745248] p-2 bg-white w-[70vw] mx-4 h-[60vh] flex lg:flex-row flex-col items-center justify-between'>
-                      <div className={` ${lora.className} w-[45%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-3xl mb-4`}>Family Suite</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Two bedrooms</li>
-                            <li>A living area</li>
-                            <li>Two bathrooms</li>
-                            <li>A private balcony with garden or pool views</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-                      <div className=' w-[45%] h-full family bg-red-500'>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  <CarouselItem className=' w-fit'>
-                    <div className=' border border-[#745248] p-2 bg-white w-[70vw] mx-4 h-[60vh] flex lg:flex-row flex-col items-center justify-between'>
-                      <div className={` ${lora.className} w-[45%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-3xl mb-4`}>honeymoon Suite</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Luxurious suite with a king-sized bed</li>
-                            <li>Private terrace with ocean view</li>
-                            <li>Jacuzzi</li>
-                            <li>Romantic Decor</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                            <li>Special honeymoon package</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-                      <div className=' w-[45%] h-full honeymoon bg-red-500'>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  <CarouselItem className=' w-fit'>
-                    <div className=' border border-[#745248] p-2 bg-white w-[70vw] mx-4 h-[60vh] flex lg:flex-row flex-col items-center justify-between'>
-                      <div className={` ${lora.className} w-[45%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-3xl mb-4`}>executive Suite</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Spacious suite with a separate living area</li>
-                            <li>Work desk</li>
-                            <li>Private balcony with garden or ocean view</li>
-                            <li>En-suite bathroom with premium amenities</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                            <li>Access to the executive lounge</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-                      <div className=' w-[45%] h-full executive bg-red-500'>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  <CarouselItem className=' w-fit'>
-                    <div className=' border border-[#745248] p-2 bg-white w-[70vw] mx-4 h-[60vh] flex lg:flex-row flex-col items-center justify-between'>
-                      <div className={` ${lora.className} w-[45%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-3xl mb-4`}>garden villa</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Private villa with a king-sized bed</li>
-                            <li>Living area</li>
-                            <li>Private garden</li>
-                            <li>Outdoor shower</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                            <li>Private butler service</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-                      <div className=' w-[45%] h-full villa bg-red-500'>
-                      </div>
-                    </div>
-                  </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
@@ -331,7 +151,7 @@ const page = () => {
           </FadeInFromLeft>
         </div>
 
-        <div id='testimonials' className=' h-[100vh] flex flex-col items-end justify-end'>
+        <div id='testimonials' className=' h-[120vh] flex flex-col items-end justify-end'>
           <div className=' bg-transparent h-full w-[5%] z-[50] absolute mx-0'>
             <div className=' w-full h-[70%] flex flex-col items-center justify-between pt-[250px]'>
               <h1 className={` ${lora.className} p-0 w-full text-center text-black border-b-2 border-black opacity-[100%] font-thin uppercase text-7xl mb-[50px]`}>T</h1>
@@ -347,8 +167,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className=' h-[80vh] w-full flex items-center justify-center'>
-            <Carousel className=' w-[70%] lg:w-[80%]'>
+          <div className=' h-[80vh] w-full flex flex-col items-center justify-center'>
+            <Carousel className=' w-[70%] lg:w-[80%] mb-[50px]'>
               <FadeInFromBottom>
                 <CarouselContent className=' w-fit'>
                   {
@@ -368,6 +188,11 @@ const page = () => {
                 <CarouselNext />
               </FadeInFromBottom>
             </Carousel>
+            <Link href={"/addTestimonial"}
+              className=' bg-[#745248]/70 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:bg-transparent transition-all duration-300 text-white hover:text-black'
+            >
+              + Add your own testimonial
+            </Link>
           </div>
         </div>
 
@@ -403,12 +228,12 @@ const page = () => {
           <div className=" w-full h-[80vh] flex items-center justify-start contact-bg px-28 py-6">
             <FadeInFromLeft>
               <form className=' w-[50%]'>
-                <h1 className={`${lora.className} font-light text-5xl mb-4`}>Contact Us</h1>
-                <input type="text" className=' w-[45%] border-b border-black bg-transparent py-2 placeholder:text-black placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='First Name: (eg. Solomon)' />
-                <input type="text" className=' w-[45%] border-b border-black bg-transparent py-2 placeholder:text-black placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Last Name: (eg. Malik)' />
-                <input type="text" className=' w-[45%] border-b border-black bg-transparent py-2 placeholder:text-black placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Email: (eg. maliksolomon@gmail.com)' />
-                <input type="text" className=' w-[45%] border-b border-black bg-transparent py-2 placeholder:text-black placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Message' />
-                <button className=' border border-black px-4 bg-slate-100 bg-opacity-20 hover:bg-transparent duration-500'>Contact</button>
+                <h1 className={`${lora.className} font-light text-5xl mb-4 text-white`}>Contact Us</h1>
+                <input type="text" className=' w-[45%] border-b border-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='First Name: (eg. Solomon)' />
+                <input type="text" className=' w-[45%] border-b border-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Last Name: (eg. Malik)' />
+                <input type="text" className=' w-[45%] border-b border-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Email: (eg. maliksolomon@gmail.com)' />
+                <input type="text" className=' w-[45%] border-b border-white bg-transparent py-2 placeholder:text-white placeholder:font-thin focus:outline-none placeholder:italic placeholder:text-sm block mb-4' placeholder='Message' />
+                <button className=' border border-white text-white px-4 bg-slate-100 bg-opacity-20 hover:bg-transparent duration-500'>Contact</button>
               </form>
             </FadeInFromLeft>
           </div>
@@ -515,7 +340,7 @@ const page = () => {
                                   <li key={index}>{amenity}</li>
                                 ))}
                               </ul>
-                              <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
+                              <Link href={`/rooms/${room.slug}`} className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</Link>
                             </div>
                           </div>
 
@@ -523,176 +348,6 @@ const page = () => {
                       </CarouselItem>
                     ))
                   }
-                  {/* <CarouselItem className='block lg:hidden w-fit'>
-                    <div className=' bg-red-500 linear-deluxe w-[70vw] mx-4 h-fit p-3 maldives text-white flex items-center justify-between'>
-                      <div className={` ${lora.className} w-[80%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-xl mb-4`}>Deluxe Room</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>King size bed</li>
-                            <li>En-suite Bathroom</li>
-                            <li>Private balcony with garden view</li>
-                            <li>Complimenrary breakfast</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-
-                    </div>
-                  </CarouselItem> */}
-                  <CarouselItem className='block lg:hidden w-fit'>
-                    <div className=' bg-white linear-ocean w-[70vw] mx-4 h-fit p-3 paris text-white flex items-center justify-between'>
-                      <div className={` ${lora.className} w-[80%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-xl mb-4`}>Ocean-view Room</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Spacious suite with a separate living area</li>
-                            <li>Panoramic ocean views</li>
-                            <li>Private balcony</li>
-                            <li>Luxurious bathroom with a soaking tub</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className='block lg:hidden w-fit'>
-                    <div className=' bg-white linear-family w-[70vw] mx-4 h-fit p-3 ny text-white flex items-center justify-between'>
-                      <div className={` ${lora.className} w-[80%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-xl mb-4`}>Family Suite</h1>
-                          <p className=''>Features:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Two bedrooms</li>
-                            <li>A living area</li>
-                            <li>Two bathrooms</li>
-                            <li>A private balcony with garden or pool views</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className='block lg:hidden w-fit'>
-                    <div className=' bg-white linear-honeymoon w-[70vw] mx-4 h-fit p-3 madrid text-white flex items-center justify-between'>
-                      <div className={` ${lora.className} w-[80%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-xl mb-4`}>honeymoon Suite</h1>
-                          <p className=' text-sm'>Features:</p>
-                          <ul className=' list-inside list-disc mb-4 text-sm'>
-                            <li>Luxurious suite with a king-sized bed</li>
-                            <li>Private terrace with ocean view</li>
-                            <li>Jacuzzi</li>
-                            <li>Romantic Decor</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4 text-sm'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                            <li>Special honeymoon package</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className='block lg:hidden w-fit'>
-                    <div className=' bg-white linear-executive w-[70vw] mx-4 h-fit p-3 madrid text-white flex items-center justify-between'>
-                      <div className={` ${lora.className} w-[80%] h-full text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-xl mb-4`}>executive Suite</h1>
-                          <p className=' text-sm'>Features:</p>
-                          <ul className=' list-inside list-disc mb-4 text-sm'>
-                            <li>Spacious suite with a separate living area</li>
-                            <li>Work desk</li>
-                            <li>Private balcony with garden or ocean view</li>
-                            <li>En-suite bathroom with premium amenities</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4 text-sm'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                            <li>Access to the executive lounge</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className='block lg:hidden w-fit'>
-                    <div className=' bg-white linear-executive w-[70vw] mx-4 h-fit p-3 madrid text-white flex items-center justify-between'>
-                      <div className={` ${lora.className} w-[80%] h-fit text-left flex justify-center items-center`}>
-                        <div className=' w-[90%]'>
-                          <h1 className={` uppercase font-bold text-xl mb-4`}>garden villa</h1>
-                          <p className=' text-sm'>Features:</p>
-                          <ul className=' list-inside list-disc mb-4 text-sm'>
-                            <li>Private villa with a king-sized bed</li>
-                            <li>Living area</li>
-                            <li>Private garden</li>
-                            <li>Outdoor shower</li>
-                          </ul>
-
-                          <p className=''>Amenities:</p>
-                          <ul className=' list-inside list-disc mb-4 text-sm'>
-                            <li>Free Wi-Fi</li>
-                            <li>Flat-screen TV</li>
-                            <li>Minbar</li>
-                            <li>Cofee maker</li>
-                            <li>Room service</li>
-                            <li>Complementary breakfast</li>
-                            <li>Private butler service</li>
-                          </ul>
-                          <button className={`bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300`}>Book Room 🛏️</button>
-                        </div>
-                      </div>
-
-                    </div>
-                  </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
@@ -731,8 +386,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className=' bg-white m-auto w-full h-[80vh] flex items-center justify-center lg:hidden'>
-            <Carousel className=' w-[70%] '>
+          <div className=' bg-white m-auto w-full h-[80vh] flex flex-col items-center justify-center lg:hidden'>
+            <Carousel className=' w-[70%] mb-[30px] '>
               <FadeInFromBottom>
                 <CarouselContent className=' w-fit'>
                   {
@@ -761,6 +416,11 @@ const page = () => {
                 <CarouselNext />
               </FadeInFromBottom>
             </Carousel>
+            <Link href={"/addTestimonial"}
+              className=' bg-[#745248]/70 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:bg-transparent transition-all duration-300 text-white hover:text-black'
+            >
+              + Add your own testimonial
+            </Link>
           </div>
         </div>
 

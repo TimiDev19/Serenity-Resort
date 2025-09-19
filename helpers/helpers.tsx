@@ -4,6 +4,7 @@ const helpers = {
     "rooms" : [
        {
         name: "Deluxe Room",
+        slug: "deluxe-room",
         image: "/deluxe.jpg",
         features: [
             "King sized bed",
@@ -17,6 +18,104 @@ const helpers = {
             "Minibar",
             "Cofee maker",
             "Room service"
+        ]
+       },
+       {
+        name: "Ocean-view Room",
+        slug: "Ocean-view-Room",
+        image: "/ocean-view.jpg",
+        features: [
+            "Spacious suite with a separate living area",
+            "Panoramic ocean views",
+            "Private balcony",
+            "Luxurious bathroom with a soaking tub"
+        ],
+        amenities: [
+            "Free Wi-Fi",
+            "Flat-Screen TV",
+            "Minibar",
+            "Cofee maker",
+            "Room service",
+            "Complementary breakfast"
+        ]
+       },
+       {
+        name: "Family Suite",
+        slug: "Family-Suite",
+        image: "/family-suite.jpg",
+        features: [
+            "Two bedrooms",
+            "A living area",
+            "Two bathrooms",
+            "A private balcony with garden or pool views"
+        ],
+        amenities: [
+            "Free Wi-Fi",
+            "Flat-Screen TV",
+            "Minibar",
+            "Cofee maker",
+            "Room service",
+            "Complementary breakfast"
+        ]
+       },
+       {
+        name: "Honeymoon Suite",
+        slug: "Honeymoon-Suite",
+        image: "/honeymoon.jpg",
+        features: [
+            "Luxurious suite with a king-sized bed",
+            "Private terrace with ocean view",
+            "Jacuzzi",
+            "Romantic Decor"
+        ],
+        amenities: [
+            "Free Wi-Fi",
+            "Flat-Screen TV",
+            "Minibar",
+            "Cofee maker",
+            "Room service",
+            "Complementary breakfast",
+            "Special honeymoon package"
+        ]
+       },
+       {
+        name: "Executive Suite",
+        slug: "Executive-Suite",
+        image: "/executive.jpg",
+        features: [
+            "Spacious suite with a separate living area",
+            "Work desk",
+            "Private balcony with garden or ocean view",
+            "En-suite bathroom with premium amenities"
+        ],
+        amenities: [
+            "Free Wi-Fi",
+            "Flat-Screen TV",
+            "Minibar",
+            "Cofee maker",
+            "Room service",
+            "Complementary breakfast",
+            "Access to the executive lounge"
+        ]
+       },
+       {
+        name: "Garden Villa",
+        slug: "Garden-Villa",
+        image: "/garden-villa.jpg",
+        features: [
+            "Private villa with a king-sized bed",
+            "Living area",
+            "Private garden",
+            "Outdoor shower"
+        ],
+        amenities: [
+            "Free Wi-Fi",
+            "Flat-Screen TV",
+            "Minibar",
+            "Cofee maker",
+            "Room service",
+            "Complementary breakfast",
+            "Private butler service"
         ]
        },
     ],

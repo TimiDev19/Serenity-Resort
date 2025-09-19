@@ -24,54 +24,6 @@
   background-size: cover;
 }
 
-.deluxe {
-
-  background-image: url('../assets/deluxe.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.linear-deluxe {
-
-  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url('../assets/deluxe.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.ocean {
-
-  background-image: url('../assets/ocean-view.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.linear-ocean {
-
-  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url('../assets/ocean-view.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.family {
-
-  background-image: url('../assets/family-suite.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.linear-family {
-
-  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url('../assets/family-suite.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .honeymoon {
 
   background-image: url('../assets/honeymoon.jpg');
