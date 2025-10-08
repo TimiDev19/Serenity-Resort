@@ -4,7 +4,7 @@ import AddTestimonial from '../components/AddTestimonial'
 
 const page = () => {
     return (
-        <div className=' pt-[100px]'>
+        <div className=''>
             <FadeInFromBottom>
                 <AddTestimonial />
             </FadeInFromBottom>

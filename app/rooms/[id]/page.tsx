@@ -45,18 +45,18 @@ export default function ProductPage({ params }: ProductPageProps) {
     }
  
     return (
-        <div className={` ${lora.className} h-[100vh] w-[100vw] flex flex-col items-center justify-center text-black overflow-y-scroll pt-[100px]`}>
-            <h1 className=" text-2xl w-[90%] lg:text-4xl text-black block mb-[30px] text-center">Hi, welcome to the booking section</h1>
+        <div className={` ${nunito.className} bg-about h-[100vh] w-[100vw] flex flex-col items-center justify-center text-black overflow-y-scroll pt-[100px]`}>
+            <h1 className=" text-2xl w-[90%] lg:text-4xl text-white block mb-[30px] text-center">Hi, welcome to the booking section</h1>
 
             <form action=""
-                className=" w-[90%] min-h-[50vh] border border-dashed border-[#745248] p-[2.5%]"
+                className=" w-[90%] min-h-[50vh] bg-white rounded-2xl shadow-sm shadow-black p-[2.5%]"
             >
                 <h1 className=" text-3xl">Serenity Resort Booking Form</h1>
                 <p className=" mb-[10px]">Enter your details below to book the <span className=" font-semibold">{roomName}</span> at Serenity Resort</p>
                 <div className=" w-full flex flex-col lg:flex-row items-center justify-between mb-[20px]">
                     <div className=" w-[90%] lg:w-[45%] h-full">
                         <div className=" mb-[10px]">
-                            <label htmlFor="" className=" text-sm block mb-1">Room</label>
+                            {/* <label htmlFor="" className=" text-sm block mb-1">Room</label> */}
                             <input type="text" value={roomName} className=" border border-[#745248] p-2 rounded-md focus:outline-none w-full" />
                         </div>
 
@@ -95,7 +95,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                         </div>
                     </div>
                 </div>
-                <Link href={"/rooms/sucess"} onClick={submitForm} className=" w-fit rounded-full mx-auto block bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300">Book Room 🛏️</Link>
+                <Link href={"/rooms/sucess"} onClick={submitForm} className=" w-fit rounded-full mx-auto block bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-1 px-4 border border-gray-500 hover:border hover:bg-transparent transition-all duration-300">Book Room 🛏️</Link>
             </form>
         </div>
 

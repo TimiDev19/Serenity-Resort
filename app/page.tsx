@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { Lora } from 'next/font/google';
+import { Lora, Ojuju } from 'next/font/google';
 import { FadeInFromBottom } from './components/FadeInFromBottom';
 import { FadeInFromLeft } from './components/FadeInFromLeft';
 import Carousellle from '@/app/components/Carousel'
@@ -16,6 +16,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import helpers from '@/helpers/helpers';
 import { features } from 'process';
 import Link from 'next/link';
+import { HeartFilledIcon, LetterSpacingIcon } from '@radix-ui/react-icons';
+import { on } from 'events';
+import { initScriptLoader } from 'next/script';
 
 const lora = Lora({
   subsets: ['latin'],
@@ -373,6 +376,7 @@ const page = () => {
         >
           <div className=' bg-transparent h-full w-[5%] z-[20] absolute mx-0'>
             <div className=' w-full h-[70%] flex flex-col items-center justify-between pt-8'>
+
               <h1 className={` ${lora.className} p-0 w-full text-center text-[#000] border-b-2 border-[#000] opacity-[55%] font-thin uppercase text-3xl mb-[50px]`}>t</h1>
               <h1 className={` ${lora.className} p-0 w-full text-center text-[#000] opacity-[55%] font-thin uppercase text-3xl mb-[50px]`}>r</h1>
               <h1 className={` ${lora.className} p-0 w-full text-center text-[#000] opacity-[55%] font-thin uppercase text-3xl mb-[50px]`}>A</h1>
@@ -383,6 +387,7 @@ const page = () => {
               <h1 className={` ${lora.className} p-0 w-full text-center text-[#000] opacity-[55%] font-thin uppercase text-3xl mb-[50px]`}>I</h1>
               <h1 className={` ${lora.className} p-0 w-full text-center text-[#000] opacity-[55%] font-thin uppercase text-3xl mb-[50px]`}>T</h1>
               <h1 className={` ${lora.className} p-0 w-full text-center text-[#000] opacity-[55%] font-thin uppercase text-3xl mb-[50px]`}>Y</h1>
+
             </div>
           </div>
 
